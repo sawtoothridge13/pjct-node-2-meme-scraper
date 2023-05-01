@@ -1,14 +1,14 @@
 // Import dependencies
 
 import fs from 'node:fs';
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import fetch from 'node-fetch';
 
 const path = './memes';
 
-fs.access(path, (error) => {
+fs.access(path, (err) => {
   // Check whether or not the directory exists
-  if (error) {
+  if (err) {
     // If the directory doesn't exist, create it
     fs.mkdir(path, (error) => {
       if (error) {
