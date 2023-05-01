@@ -10,9 +10,9 @@ Create a node.js app to scrape first 10 memes from a website and save them to a 
     - [ ] One option: `.jpg` - this is in the HTML code of the website
     - [x] Another option: `<img`
   - [x] Get the `src` URL strings from the `img`
-- [ ] Add the first 10 image URL strings to an array
-- [ ] Loop over the first 10 image URLs and:
-  - [ ] Create a file (named correctly) in the `memes` folder (eg. `01.jpg`, `02.jpg`, etc)
-  - [ ] Access the image URL
-  - [ ] In this file, store the image data that comes back (in the "response") from the website
-- [ ] Test to make sure the program can run multiple times without failing
+- [x] Add the first 10 image URL strings to an array
+- [x] Loop over the first 10 image URLs and:
+  - [x] Create a file (named correctly) in the `memes` folder (eg. `01.jpg`, `02.jpg`, etc)
+  - [x] Access the image URL
+  - [x] In this file, store the image data that comes back (in the "response") from the website
+- [x] Test to make sure the program can run multiple times without failing
