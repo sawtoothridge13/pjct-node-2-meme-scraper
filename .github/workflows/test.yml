@@ -29,7 +29,7 @@ jobs:
             import { exec } from 'node:child_process';
             import { createHash } from 'node:crypto';
             import { existsSync } from 'node:fs';
-            import { readdir, readFile } from 'node:fs/promises';
+            import { readDir, readFile } from 'node:fs/promises';
             import { promisify } from 'node:util';
 
             const execAsync = promisify(exec);
@@ -57,7 +57,7 @@ jobs:
             };
 
             // Read all files in directory and print the SHA-256 hash of each file
-            const files = await readdir('./memes');
+            const files = await readDir('./memes');
 
             const filesAsString = files.join(',');
             const expectedFilesAsString = Object.keys(expectedFileHashes).join(',');

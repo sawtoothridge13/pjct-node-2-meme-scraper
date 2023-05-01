@@ -35,9 +35,9 @@ fetch('https://memegen-link-examples-upleveled.netlify.app/')
       fetch(memeImage).then((res) => {
         // Save each image and rename to a destination path
         const filename = (i + 1).toString().padStart(2, '0') + '.jpg';
-        const path = './memes/' + filename;
+        const newFilePath = './memes/' + filename;
 
-        const dest = fs.createWriteStream(path);
+        const dest = fs.createWriteStream(newFilePath);
         res.body.pipe(dest);
       });
     }
