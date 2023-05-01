@@ -17,6 +17,9 @@
   "dependencies": {
     "axios": "^1.4.0",
     "cheerio": "1.0.0-rc.12",
-    "fs": "0.0.1-security"
+    "fetch": "^1.1.0",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "path": "^0.12.7"
   }
 }
